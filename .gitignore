@@ -10,9 +10,7 @@
 /ders02-props-components/build
 /ders03-hooks/build
 /ders04-fetch/build
-/ders05-redux-react/build
+/ders05-redux-router/build
 
 # testing
 /coverage
-
-/ders05-redux-router

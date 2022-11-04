@@ -1,0 +1,23 @@
+.cardContainer {
+    padding: 10px;
+}
+
+.cardText {
+    word-wrap: break-word;
+    overflow-y: hidden;
+    height: 100px;
+}
+
+.cardText:hover {
+    overflow-y: auto;
+}
+
+.cardHeader {
+    overflow-y: hidden;
+    height: 50px;
+}
+
+
+.cardHeader:hover {
+    overflow-y: auto;
+}
