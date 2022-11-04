@@ -15,6 +15,5 @@
 # testing
 /coverage
 
-/ders03-hooks
 /ders04-fetch
 /ders05-redux-router
