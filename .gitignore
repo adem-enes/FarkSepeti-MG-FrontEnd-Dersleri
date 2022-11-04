@@ -15,7 +15,6 @@
 # testing
 /coverage
 
-/ders02-props-components
 /ders03-hooks
 /ders04-fetch
 /ders05-redux-router

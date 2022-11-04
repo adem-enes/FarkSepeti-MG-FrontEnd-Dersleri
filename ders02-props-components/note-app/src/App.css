@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+:root {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.App {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.notlar-container {
+  width: 80%;
+}
+
+.notlar-container>h1 {
+  font-size: 60px;
+  padding: 10px;
+  text-align: center;
+}
+
+.form {
+  padding: 60px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: #b4b4b4 1px solid;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px #b4b4b4;
+  /* background-color: var(--white); */
+}
+
+.form .submitButton {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.submitButton>input[type="submit"] {
+  cursor: pointer;
+  padding: .5rem;
+  border-radius: 5px;
+  /* border: 1px solid #000; */
+  border: none;
+  width: 25%;
+  background-color: #32aa46;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.submitButton>input[type="submit"]:hover {
+  background-color: #277537;
+}
+
+.notes {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+  align-items: center;
+  /* justify-content: center; */
+  /* border: 1px solid #000;
+  border-radius: 10px; */
+  padding: 10px;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 5px;
+}
+
+/*Track*/
+::-webkit-scrollbar-track {
+  background: #c3c3c3;
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #828282;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #828282;
+}
