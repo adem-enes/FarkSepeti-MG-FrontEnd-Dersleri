@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--white);
+    font-family: 'Poppins';
+    font-weight: 200;
+}
+
+:root {
+    --white: #fafafa;
+    --black: #191919;
+    --light-black: #333333;
+    --grey: #707070;
+    --light-grey: #a0a0a0;
+    --lighter-grey: #cccccc;
+    --orange: #ec6e00;
+
+    --font-detail: 12px;
+    --font-text: 16px;
+
+    --all03s: all 0.3s;
+}
+
+#app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 500px;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px var(--grey);
+    overflow: hidden;
+}
+
+.card:hover>.card-img>img {
+    transform: scale(1.1);
+}
+
+.card:hover>.card-content>.card-stars {
+    display: none;
+}
+
+.card:hover>.card-content>.basket {
+    display: block;
+}
+
+.favorite {
+    transition: var(--all03s);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    user-select: none;
+    box-shadow: 0px 0px 3px var(--grey);
+    color: var(--light-grey);
+    cursor: pointer;
+}
+
+.favorite>span {
+    font-size: 25px;
+    background-color: transparent;
+}
+
+.favorite:hover {
+    background-color: var(--lighter-grey);
+    color: var(--black);
+}
+
+.card-img {
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    height: 50%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#first-img,
+#last-img,
+#middle-img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    background-color: transparent;
+    z-index: 3;
+}
+
+#first-img {
+    left: 0;
+}
+
+#middle-img {
+    left: 35%;
+}
+
+#last-img {
+    right: 0;
+}
+
+.card-img>img {
+    transition: var(--all03s);
+    display: inline;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    transition: var(--all03s);
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card-price {
+    font-weight: bolder;
+}
+
+.card-price>h1 span {
+    font-size: 20px;
+}
+
+.card-price>.discount {
+    font-size: var(--font-detail);
+}
+
+.card-price>.discount>span {
+    text-decoration: line-through;
+}
+
+.card-stars {
+    transition: var(--all03s);
+    padding: 10px;
+}
+
+.star-rate {
+    font-size: var(--font-detail);
+}
+
+.star-filled {
+    color: var(--orange);
+}
+
+.star-empty {
+    color: var(--light-grey);
+}
+
+.basket {
+    transition: var(--all03s);
+    width: 100%;
+    display: none;
+    padding: 1px;
+}
+
+.basket>button {
+    transition: var(--all03s);
+    width: 100%;
+    padding: 10px 30px;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.basket>button:hover {
+    background-color: var(--light-black);
+}
