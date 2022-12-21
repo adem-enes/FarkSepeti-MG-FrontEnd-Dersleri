@@ -1,0 +1,3 @@
+[submodule "kapsambaseui"]
+	path = ui-template/react-template/src/farksepetibaseui
+	url = https://github.com/Farksepeti/farksepetibaseui.git

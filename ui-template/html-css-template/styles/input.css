@@ -1,0 +1,33 @@
+.input-container,
+.input-container>label,
+.input-container>label>input {
+    width: 100%;
+    cursor: pointer;
+}
+
+.input-container>label {
+    position: relative;
+
+}
+
+.input-container>label>input {
+    padding: 5px 0;
+    border: 0px solid var(--black);
+    border-bottom-width: 1px;
+    outline: none;
+}
+
+.input-container>label>span {
+    position: absolute;
+    line-height: 1.1rem;
+    left: 0;
+    background: transparent;
+    top: 0;
+    transition: var(--all-03s);
+}
+
+.input-container>label>input:not(:placeholder-shown)+span,
+.input-container>label>input:focus+span {
+    top: -1.2rem;
+    font-size: var(--font-detail);
+}
